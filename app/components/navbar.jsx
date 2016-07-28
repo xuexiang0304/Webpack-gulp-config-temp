@@ -10,6 +10,7 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
 import Tooltip from 'react-bootstrap/lib/Tooltip';
+import ModalUserAlert from './userAlertModal.jsx';
 
 // const Navbar = React.createClass({
 
@@ -65,6 +66,12 @@ const tooltip_setting = (
 // The component of Nav Bar
 // Rendered by main.js and displayed on UI
 const NavbarTop = React.createClass({
+    handleUserAlert:function(eventkey) {
+        ReactDOM.render(<ModalUserAlert show="true"/>, document.getElementById('user-alert'));
+    },
+    handleSystemConfig:function () {
+        ReactDOM.render(<ModalUserAlert show="true"/>, document.getElementById('system-config'));
+    },
     render(){
         return(
         <Navbar fluid className="nav-custom">
@@ -101,9 +108,9 @@ const NavbarTop = React.createClass({
                     </OverlayTrigger>
                     <OverlayTrigger placement="bottom" overlay={tooltip_setting}>
                         <NavDropdown eventKey={3} id="basic-nav-dropdown" className="nav-icon" title={<span className="glyphicon glyphicon-cog" aria-hidden="true"></span>}>
-                            <MenuItem eventKey={3.1}>User Alerts</MenuItem>
+                            <MenuItem eventKey={3.1} id="user-alert" onSelect={this.handleUserAlert}>User Alerts</MenuItem>
                             <MenuItem divider />
-                            <MenuItem eventKey={3.2}>System Configure</MenuItem>
+                            <MenuItem eventKey={3.2} id="system-config" onSelect={this.handleSystemConfig}>System Configure</MenuItem>
                         </NavDropdown>
                     </OverlayTrigger>
                 </Nav>

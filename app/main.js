@@ -6,6 +6,7 @@ require('./Style/sass/nav.scss');
 require('./Style/sass/menu.scss');
 require('./Style/sass/messageList.scss');
 require('./Style/sass/messageLog.scss');
+import './Style/sass/modal.scss';
 
 var NavbarComponent = require('./components/navbar.jsx');
 var MenuComponent = require('./components/menu.jsx');

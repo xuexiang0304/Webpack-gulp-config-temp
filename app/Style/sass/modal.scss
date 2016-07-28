@@ -1,0 +1,14 @@
+@import "common";
+
+.modal-header{
+  .modal-title{
+    font-size: 25px;
+  }
+  .close span{
+    font-size: 30px;
+  }
+}
+
+.modal-dialog{
+  width: 90%;
+}

@@ -40,3 +40,11 @@ html, body{
     clear: both;
   }
 }
+
+.modal-container {
+  height: 100%;
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
