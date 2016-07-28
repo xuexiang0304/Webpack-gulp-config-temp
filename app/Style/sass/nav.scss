@@ -1,0 +1,44 @@
+@import 'common';
+
+.nav-custom{
+  background-color: $background-color;
+  height: 55px;
+}
+
+#nav{
+  .navbar-brand{
+    color: $global-yellow;
+    margin: 0px;
+    font-size:25px;
+    font-weight: bold;
+  }
+
+  .nav-search{
+    a{
+      padding: 0px;
+    }
+    .btn-custom{
+      &:hover{
+        background-color: $global-yellow;
+      }
+      @include set-color($background-color, white, $background-color);
+    }
+  }
+
+  .nav-icon {
+    a:hover{
+      background-color: $global-yellow;
+    }
+    &.open .dropdown-toggle{
+      background-color: $global-yellow;
+    }
+    span{
+      color: $nav-icon;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .dropdown-menu a:hover{
+      background-color: $panel-hover;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "common";
+
+.menu_icon{
+    float: right;
+    color: black;
+
+    &:hover{
+      color: $global-yellow;
+    }
+    &::after{
+      clear: both;
+    }
+  }
+
+#menu{
+  width: 15%;
+  border-right: 2px solid $panel-border;
+
+  .menu_top{
+    height: 35px;
+    border-bottom: 2px solid $panel-border;
+
+    label{
+      line-height: 30px;
+      padding-left: 30px;
+    }
+    a {
+      @extend .menu_icon;
+    }
+  }
+  .msg_category{
+    .category-title{
+      height: 40px;
+      line-height: 40px;
+      border:2px solid $panel-border;
+
+      .category{
+        font-size: 18px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+        span{
+          padding: 0 15px;
+          &.fa-exclamation{
+            @extend .error;
+          }
+          &.fa-inbox, &.fa-paper-plane{
+            @extend .success;
+          }
+        }
+      }
+    }
+    .menu_icon{
+      @extend .menu_icon;
+    }
+    .system-list{
+      display: none;
+
+      &.active{
+        display: block;
+      }
+      .system_name{
+        text-align: right;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        padding-right: 50px;
+
+        &:hover{
+          background-color:$panel-hover;
+        }
+      }
+    }
+  }
+}

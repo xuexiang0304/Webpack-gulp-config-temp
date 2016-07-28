@@ -1,4 +1,66 @@
+html, body {
+  height: 100%; }
+
 #content {
-  background-color: blue; }
+  height: calc(100% - 55px);
+  margin-top: -20px; }
+html, body {
+  height: 100%; }
+
+#content {
+  height: calc(100% - 55px);
+  margin-top: -20px; }
+
+.nav-custom {
+  background-color: #000;
+  height: 55px; }
+
+#nav .navbar-brand {
+  color: #ffde37;
+  margin: 0px;
+  font-size: 25px;
+  font-weight: bold; }
+
+#nav .nav-search a {
+  padding: 0px; }
+
+#nav .nav-search .btn-custom {
+  background-color: #000;
+  color: white;
+  border-color: #000; }
+  #nav .nav-search .btn-custom:hover {
+    background-color: #ffde37; }
+
+#nav .nav-icon a:hover {
+  background-color: #ffde37; }
+
+#nav .nav-icon span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+html, body {
+  height: 100%; }
+
+#content {
+  height: calc(100% - 55px);
+  margin-top: -20px; }
+
+#menu {
+  width: 20%;
+  height: 100%;
+  border: 2px solid #eeeeee; }
+  #menu .menu_top {
+    height: 35px;
+    border-bottom: 2px solid #eeeeee; }
+    #menu .menu_top label {
+      line-height: 30px;
+      padding-left: 30px; }
+    #menu .menu_top a {
+      float: right;
+      color: black; }
+      #menu .menu_top a:hover {
+        color: #ffde37; }
+      #menu .menu_top a::after {
+        clear: both; }
 
 /*# sourceMappingURL=style.css.map*/

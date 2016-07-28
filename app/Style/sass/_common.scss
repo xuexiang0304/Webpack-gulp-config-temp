@@ -1,0 +1,42 @@
+$background-color: #000;
+$global-yellow: #ffde37;
+$nav-icon: white;
+$panel-border: #eeeeee;
+$panel-hover: #DDDDDD;
+$msg-list-header: #D8D7D7;
+$msg-list-hover: #F7F3F3;
+
+@mixin set-color($back, $color, $border){
+  background-color: $back;
+  color: $color;
+  border-color: $border;
+}
+
+.error{
+  color: red;
+}
+.success{
+  color: green;
+}
+
+body{
+overflow: hidden;
+}
+
+html, body{
+  height: 100%;
+}
+#content{
+  height: calc(100% - 55px);
+  margin-top: -20px;
+  >div{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: auto;
+    float:left;
+  }
+  &::after{
+    clear: both;
+  }
+}
