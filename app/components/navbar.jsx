@@ -11,6 +11,7 @@ import FormGroup from 'react-bootstrap/lib/FormGroup';
 import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
 import Tooltip from 'react-bootstrap/lib/Tooltip';
 import ModalUserAlert from './userAlertModal.jsx';
+import ModalSystemConfig from './systemConfigModal.jsx';
 
 // const Navbar = React.createClass({
 
@@ -70,7 +71,7 @@ const NavbarTop = React.createClass({
         ReactDOM.render(<ModalUserAlert show="true"/>, document.getElementById('user-alert'));
     },
     handleSystemConfig:function () {
-        ReactDOM.render(<ModalUserAlert show="true"/>, document.getElementById('system-config'));
+        ReactDOM.render(<ModalSystemConfig show="true"/>, document.getElementById('system-config'));
     },
     render(){
         return(
